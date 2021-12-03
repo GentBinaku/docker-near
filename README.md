@@ -23,3 +23,11 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
     docker build -t ubuntu .
     docker run -t -d ubuntu  /bin/bash
     docker exec -ti <container_id> /bin/bash
+
+    sudo docker commit b1c61634132e338dc9999356bbb1c6158488453636b859e3217f52018ce88315 ubuntu-near:latest
+   
+   Then go to Dockerfile and change to 
+   # Pull base image.
+   FROM ubuntu-near:latest
+
+   Each time you do a change please don't forget to commit otherwise the changes won't be persisted
