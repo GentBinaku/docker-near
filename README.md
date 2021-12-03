@@ -20,4 +20,6 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 ### Usage
 
-    docker run -it --rm dockerfile/ubuntu
+    docker build -t ubuntu .
+    docker run -t -d ubuntu  /bin/bash
+    docker exec -ti <container_id> /bin/bash
