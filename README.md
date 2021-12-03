@@ -26,6 +26,6 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
    
    Then go to Dockerfile and change to 
    # Pull base image.
-   FROM ubuntu-near:latest
+   FROM node-near:latest
 
    Each time you do a change please don't forget to commit otherwise the changes won't be persisted

@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM node:12.18.1
 
 # Install.
 RUN \
