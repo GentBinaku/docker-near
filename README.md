@@ -13,6 +13,9 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
     docker build -t ubuntu .
     docker run -t -d ubuntu  /bin/bash
+    
+    This will return a hash which will be used as container_id
+    
     docker exec -ti <container_id> /bin/bash
     Inside the container
         sudo apt update
